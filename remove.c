@@ -19,6 +19,6 @@ int remove_item ( list * lst , node * element )
 	return val ;
 }
 int pop_item ( list * lst ) {
-	int i = remove_item ( lst , lst -> front -> next) ;
+	int i = remove_item ( lst , lst -> rear -> prev) ;
 	return i;
 }
